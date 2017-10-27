@@ -38,4 +38,4 @@ Updating the server...
 4. Run the container (see chapter *Getting started*)
 
 ## Backup the data
-The data of the server, like the worlds, players, ... is stored outside the container in the `server-data` folder. So it is easy to back up you data.
+The data of the server (like the worlds, players, ...) is stored outside the container in the `server-data` folder. So it is easy to create a backup.
