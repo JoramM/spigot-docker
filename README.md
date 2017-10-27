@@ -11,7 +11,7 @@ This Docker container is made to run a spigot or bukkit Minecraft server.
 ```
 docker build -t minecraft .
 ```
-4. If you just want to run a new minecraft server, continue with step 5. If you want to use your existing server, copy all files of your existing server directory (with the files like `server.properties`, `ops.json`, ... and the world folders) to the `server-data` folder.
+4. If you just want to run a new minecraft server, continue with step 5. If you want to use your existing server, copy all files of your existing server directory (with the files like `server.properties`, `ops.json`, ... and the world folders) to the `server-data` folder. Make sure the `server-ip` setting in `server.properties` is empty (`server-ip=`) because the Docker container has to use his own IP.
 
 5. Run the container (line 1: `interactive` mode, line 2: `detached` mode)
 ```
