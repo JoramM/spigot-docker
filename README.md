@@ -26,6 +26,9 @@ The port where the Minecraft server is visible at your host machine depends on h
 docker run -it --rm -v $PWD/server-data:/minecraft -p <host-port>:25565 --name minecraft minecraft
 ```
 
+### Changing Minecraft version and the amount of RAM
+You can adjust the amout of used memory for the Minecraft server in the `includes/entrypoint.sh` file. This is the same place where the Minecraft version can be changed.
+
 ## Updating
 Updating the server...
 1. Delete or rename the `server-data/BuildTools.jar` file (Want to know why? See `includes/entrypoint.sh`)
